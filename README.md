@@ -8,4 +8,4 @@ A utility inspired by [symfony/maker-bundle](https://symfony.com/doc/current/bun
 No distribution method is installed yet. 
 Basic knowledge of Python/git expected.
 Use git to clone the repository. 
-Run `python3 make.py` to get a list of commands available.
+Run `python3 cli/make.py` to get a list of commands available.
