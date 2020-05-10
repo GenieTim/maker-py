@@ -28,7 +28,7 @@ def make_interface(classname, functions):
     functions = ''.join(functions).split(' ') if all(
         len(x) == 1 for x in functions) else functions
     # make sure they do not contain special characters
-    functions = map(cvn.clean_variable_name, functions)
+    functions = [cvn.clean_variable_name(x) for x in functions]
     for function_name in functions:
         class_str += "\n"
         class_str += "  @property\n"
